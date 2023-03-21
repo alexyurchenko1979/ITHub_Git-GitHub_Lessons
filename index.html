@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveTo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/fade.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+    <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="top">
+        <div class="one">
+            <h1>MoveTo</h1>
+            <img class="lazyload" data-src="" alt="" srcset="">
+            <div class="action">
+                <button data-target="#contact" data-mt-duration="1200" data-tippy-content="Чтоб с кем то поговорить!"
+                    data-micron="tada" data-micron-duration="2">Contact</button>
+                <button data-target="#features" data-tippy-content="Что мы тут делаем!" data-mt-duration="1200">Our
+                    Features</button>
+                <button data-target="#map" data-tippy-content="Карта СОКРОВИЩЬ!" data-mt-duration="1200">Map</button>
+                <br></br>
+                <br></br>
+                <br></br>
+                <button href="#!" class="button" data-micron="tada" data-micron-bind="true"
+                    data-micron-id="Lorem">НАДПИСЬ</button>
+                <br></br>
+                <button data-micron="jelly" data-micron-duration="1.5">ШАТАЙ</button>   
+                <br></br>
+                <br></br>
+                <br></br>
+
+                <div id="Lorem" data-micron="jelly" data-micron-duration="1">Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ea, quod ex consectetur iure provident sequi quas autem, placeat
+                    blanditiis vitae voluptatibus facilis reprehenderit exercitationem recusandae quae tenetur harum!
+                    Laboriosam, corporis?</div>
+
+                <br></br>
+                <br></br>
+
+                <div id="me">HELLO WORLD</div>
+
+
+            </div>
+        </div>
+    </header>
+    <div class="two">
+        <section id="features" style="flex-direction: column;">
+            <h2>Features</h2>
+
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+            <button data-target="#top" data-mt-duration="1200">Go Top</button>
+            <button data-target="#contact" data-mt-duration="1200">Contact</button>
+            <button data-target="#map" data-mt-duration="1200">Map</button>
+        </section>
+    </div>
+
+    <section id="map">
+        <div class="map">
+            <h2>Map</h2>
+            <button data-target="#top" data-mt-duration="1200">Go Top</button>
+            <button data-target="#contact" data-mt-duration="1200">Contact</button>
+            <button data-target="#features" data-mt-duration="1200">Features</button>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.998379810371!2d131.90341329402168!3d43.12556023927541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb392110c195f89%3A0x2ff2f6c519c723fc!2z0KTQk9CR0J7QoyDQktCeICLQktC70LDQtNC40LLQvtGB0YLQvtC60YHQutC40Lkg0LPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INGD0L3QuNCy0LXRgNGB0LjRgtC10YIg0Y3QutC-0L3QvtC80LjQutC4INC4INGB0LXRgNCy0LjRgdCwIg!5e0!3m2!1sru!2sru!4v1668411279856!5m2!1sru!2sru"
+                width="600" height="450" style="border:0;" allowfullscreen="" class="lazyload"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="three">
+            <section id="contact">
+                <div>
+                    <h2>Contacts</h2>
+                    <form autocomplete="off">
+                        <label>
+                            Телефон
+                            <input type="text" id="phone">
+                        </label>
+                        <br></br>
+                        <label>
+                            Адрес
+                            <input type="text" id="adress">
+                        </label>
+                        <br></br>
+                        <label>
+                            Дата
+                            <input type="text" id="date">
+                        </label>
+                    </form>
+                    <br></br>
+                    <br></br>
+                    <button data-target="#top" data-mt-duration="1200">Go Top</button>
+                    <button data-target="#features" data-mt-duration="1200">Features</button>
+                    <button data-target="#map" data-mt-duration="1200">Map</button>
+                </div>
+            </section>
+        </div>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moveTo/1.8.2/moveTo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
+        <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/imask"></script>
+        <script src="./script.js"></script>
+
+</body>
+
+</html>
